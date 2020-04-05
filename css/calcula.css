@@ -1,0 +1,96 @@
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.calculadora {
+    margin: 0 auto;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #423c3cea;
+    width: 345px;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla {
+    width: 291px;
+    border-radius: 25px;
+    border: 2px black solid;
+    text-align: right;
+    position: static;
+    left: 30px;
+    padding: 15px 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: white;
+    font-family: "courier new";
+    font-size: 20px;
+    overflow-x: scroll;
+}
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] {
+    width: 69px;
+    height: 40px;
+    color: white;
+}
+
+/*botones especiales*/
+.calculadora input.largo {
+    background-color: rgb(184, 43, 43);
+}
+
+.calculadora input.cientifica {
+    background-color: rgb(22, 21, 21);
+}
+
+.calculadora input.basica {
+    background-color: rgba(134, 130, 130, 0.541);
+}
+
+.calculadora .sistema {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.calculadora .especiales {
+    display: table;
+    overflow: hidden;
+    float: right;
+    width: 276px;
+    height: 40px;
+}
+
+.calculadora .numeros {
+    display: inline-table;
+    float: right;
+    overflow: hidden;
+    width: 207px;
+    height: 160px;
+}
+
+.cientifica_centro {
+    display: inline-table;
+    float: right;
+    overflow: hidden;
+    width: 207px;
+    height: 80px;
+}
+
+.cientifica_izq {
+    display: inline-table;
+    float: left;
+    overflow: hidden;
+    width: 69px;
+    height: 280px;
+}
+
+.calculadora .op_basicas {
+    display: inline-table;
+    float: right;
+    overflow: hidden;
+    width: 66px;
+    height: 200px;
+}
